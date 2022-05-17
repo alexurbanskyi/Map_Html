@@ -173,7 +173,7 @@ body{
 }
 .inventory-elemet-description{
    display: flex;
-   align-items: center;
+   align-items: start;
    justify-content: start;
 }
 .inven-icon{
