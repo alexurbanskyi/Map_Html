@@ -8,8 +8,10 @@ body{
 }  
 .container{
    max-width: 1430px;
+   margin: 0 auto;
    display: flex;
    height: 100vh;
+
 }
 .aside{
    background: #992B82;
@@ -166,3 +168,103 @@ body{
    line-height: 22px;
    color: #595959;
 }
+.info{
+   background: #F5F5F5;
+   flex-grow: 1;
+}
+.info-container{
+   width: 540px;
+   padding: 30px 0;
+
+}
+.info-data{
+   display: flex;
+   align-content: center;
+   justify-content: space-between;
+}
+.data{
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+}
+.data span{
+   font-weight: 600;
+
+} 
+
+.del-button{
+   display: flex;
+   align-items: center;
+   background: #F5222D;
+   border-radius: 4px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 20px;
+   color: white ;
+   padding: 0 6px ;
+   border: none;
+}  
+.del-icon{
+   margin-right: 6px;
+}
+.info-discription{
+   padding: 13px 23px 9px 33px ;
+   background-color: white;
+   margin-top: 20px;
+   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+   border-radius: 5px;
+}
+.discription-title{
+   display: flex;
+   justify-content: space-between;
+  
+   
+}
+   
+.title-name{
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 28px;
+}
+.title-param{
+   display: flex;
+   flex-direction: column;
+}
+.param{
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 20px;
+}
+.param span{
+   font-weight: 600;
+}
+.discription-text{
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+   color: #595959;
+   margin-top: 24px;
+}
+.info-map{
+   width: 540px;
+   height: 200px;
+   margin-top: 24px;
+   background-image: url('./../img/Map.svg');
+   background-repeat: no-repeat;
+   background-position: center ;
+   position: relative;
+  
+}
+.map-icon{
+    width: 560px;
+    height: 192px;
+}
+.map-point{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+
