@@ -144,8 +144,14 @@ body{
 }
 .inventory-elemet{
    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
-   padding: 16px 0;
+   padding: 16px 25px;
    margin-bottom: 9px;
+   position: relative;
+
+}
+.inventory-elemet.active{
+   border: 2px solid #F1287E;
+   border-radius: 4px;
 }
 .inventory-elemet-description{
    display: flex;
@@ -155,12 +161,18 @@ body{
 .inven-icon{
    width: 22px;
    height: 20px;
+   margin-right: 20px;
 }
 .element-title{
    font-weight: 400;
    font-size: 16px;
    line-height: 24px;
    color: #262626;
+}
+.ellipse{
+   position: absolute;
+   top: 16px;
+   right: 16px;
 }
 .element-info{
    font-weight: 400;
@@ -171,10 +183,13 @@ body{
 .info{
    background: #F5F5F5;
    flex-grow: 1;
+   display: flex;
+   justify-content: center;
+   
 }
 .info-container{
-   width: 540px;
-   padding: 30px 0;
+   width: 580px;
+   padding: 30px 20px;
 
 }
 .info-data{
@@ -203,6 +218,7 @@ body{
    color: white ;
    padding: 0 6px ;
    border: none;
+   cursor: pointer;
 }  
 .del-icon{
    margin-right: 6px;
@@ -253,7 +269,8 @@ body{
    background-repeat: no-repeat;
    background-position: center ;
    position: relative;
-  
+   filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.05));
+   border-radius: 4px;
 }
 .map-icon{
     width: 560px;
@@ -265,6 +282,41 @@ body{
    left: 50%;
    transform: translate(-50%, -50%);
 }
-
+.subtitle{
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 24px;
+   margin: 20px 0;
+}
+.cases{
+   padding: 10px 20px;
+   background-color: white;
+   display: inline-block;
+   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   width: fit-content;
+   margin-bottom: 10px;
+}
+.cases-title{
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 20px;
+}
+.cases-time{
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 20px;
+   color: #BFBFBF;
+}
+.sheet-icon{
+   width: 13px;
+   height: 18px;
+   margin-right: 20px ;
+}
+.history{
+   padding: 30px 10px;
+}
 
 
